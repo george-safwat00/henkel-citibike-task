@@ -1,0 +1,32 @@
+table dim_gender
+	lineageTag: 6639c6d1-e0a7-435f-874d-4473aaf03694
+
+	column gender_id
+		dataType: int64
+		formatString: 0
+		lineageTag: f71d5ce5-e487-4f22-9909-7ada644116ec
+		summarizeBy: none
+		sourceColumn: gender_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column gender_name
+		dataType: string
+		lineageTag: 71dc6234-8ee7-4e79-8b72-0170a0bd716f
+		summarizeBy: none
+		sourceColumn: gender_name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_gender = m
+		mode: import
+		source =
+				let
+				    Source = Parquet.Document(File.Contents("D:\henkel-citibike-task\data\processed\dim_gender.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null])
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

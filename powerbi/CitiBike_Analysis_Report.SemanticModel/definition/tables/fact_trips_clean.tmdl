@@ -1,0 +1,186 @@
+table fact_trips_clean
+	lineageTag: fad86cb0-bf92-48a4-809f-3c2c9e9f745f
+
+	column trip_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 98e4a878-1015-41da-b2b9-056d50efb356
+		summarizeBy: sum
+		sourceColumn: trip_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column trip_duration_seconds
+		dataType: int64
+		formatString: 0
+		lineageTag: 446b5bdb-1082-4c41-804a-5ef9583e5dff
+		summarizeBy: sum
+		sourceColumn: trip_duration_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column start_time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e10b4c79-40ab-40e0-91e4-60b56b58d929
+		summarizeBy: none
+		sourceColumn: start_time
+
+		variation Variation
+			isDefault
+			relationship: 4647b6d5-1769-4797-9787-857062052497
+			defaultHierarchy: LocalDateTable_d3d8c8d6-0874-490d-b8cb-83954df44d71.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column stop_time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 6c6c2f34-3767-4732-b881-acd4c18f0da6
+		summarizeBy: none
+		sourceColumn: stop_time
+
+		variation Variation
+			isDefault
+			relationship: 4c225d42-618c-4124-8f43-57892d5b6982
+			defaultHierarchy: LocalDateTable_464f5b6d-1771-44c9-8072-3a5705769318.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column start_station_id
+		dataType: int64
+		formatString: 0
+		lineageTag: efe41fad-e3e6-4801-b870-87615940b104
+		summarizeBy: sum
+		sourceColumn: start_station_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column end_station_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 752b18e9-ce3d-42d7-86b9-b8783bfce87c
+		summarizeBy: none
+		sourceColumn: end_station_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column bike_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 55ef4e0d-f713-429f-bc5d-01fb725c1c5b
+		summarizeBy: sum
+		sourceColumn: bike_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column birth_year
+		dataType: int64
+		formatString: 0
+		lineageTag: b62c8b9b-17ef-4f0e-ba67-9024cf2b4a1b
+		summarizeBy: sum
+		sourceColumn: birth_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column gender_id
+		dataType: int64
+		formatString: 0
+		lineageTag: e6ca08ec-1aa1-4d47-acd4-c8a6dd5a6811
+		summarizeBy: none
+		sourceColumn: gender_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column age
+		dataType: int64
+		formatString: 0
+		lineageTag: 28086d13-ce06-4e5a-b96d-7fc8b89fcef8
+		summarizeBy: sum
+		sourceColumn: age
+
+		annotation SummarizationSetBy = Automatic
+
+	column user_type_id
+		dataType: string
+		lineageTag: 5a1e799e-92ed-41aa-b359-6ffe12950fa0
+		summarizeBy: none
+		sourceColumn: user_type_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column distance_km
+		dataType: double
+		lineageTag: 5c4fc8e6-7472-4216-89c8-fdd56c80d2e7
+		summarizeBy: sum
+		sourceColumn: distance_km
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column speed_kmh
+		dataType: double
+		lineageTag: d11d8890-a14a-4593-8223-c2bfd546d5cd
+		summarizeBy: sum
+		sourceColumn: speed_kmh
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column start_hour = HOUR('fact_trips_clean'[start_time])
+		formatString: 0
+		lineageTag: 839fbd26-8e27-4bb4-bdbc-a2ebdbab26aa
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column stop_hour = HOUR('fact_trips_clean'[stop_time])
+		formatString: 0
+		lineageTag: ec7c41cd-a273-4dec-a08d-be80becec33f
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column start_date = DATE(YEAR([start_time]),MONTH([start_time]),DAY([start_time]))
+		formatString: General Date
+		lineageTag: a6867e9a-6be1-4519-8b1b-17d3cfe17341
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column stop_date = DATE(YEAR([stop_time]),MONTH([stop_time]),DAY([stop_time]))
+		formatString: General Date
+		lineageTag: 1deedaa9-1f39-4f05-be57-3e492f622454
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Duration Bin (min)' =
+			
+			SWITCH(
+			    TRUE(),
+			    'fact_trips_clean'[trip_duration_seconds] <= 600, "0-10 min",
+			    'fact_trips_clean'[trip_duration_seconds] <= 1200, "10-20 min",
+			    'fact_trips_clean'[trip_duration_seconds] <= 1800, "20-30 min",
+			    'fact_trips_clean'[trip_duration_seconds] <= 3600, "30-60 min",
+			    "> 60 min"
+			)
+		lineageTag: 215ddbd9-dc9c-415e-a32e-a1333bd1930f
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_trips_clean = m
+		mode: import
+		source =
+				let
+				    Source = Parquet.Document(File.Contents("D:\henkel-citibike-task\data\processed\fact_trips_clean.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null])
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

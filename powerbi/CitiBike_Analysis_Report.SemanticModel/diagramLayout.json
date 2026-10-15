@@ -1,0 +1,111 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 174,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 258,
+            "y": 664.25
+          },
+          "nodeIndex": "dim_gender",
+          "nodeLineageTag": "6639c6d1-e0a7-435f-874d-4473aaf03694",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 256,
+            "y": 326.25
+          },
+          "nodeIndex": "dim_station",
+          "nodeLineageTag": "535bb566-9ccd-4c2d-bbfd-66ef3681044d",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 729,
+            "y": 236.25
+          },
+          "nodeIndex": "dim_user_type",
+          "nodeLineageTag": "1854a0cb-063b-4ded-9357-0754c6a33715",
+          "size": {
+            "height": 145,
+            "width": 233
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 626,
+            "y": 488.25
+          },
+          "nodeIndex": "fact_trips_clean",
+          "nodeLineageTag": "fad86cb0-bf92-48a4-809f-3c2c9e9f745f",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 1051,
+            "y": 597.25
+          },
+          "nodeIndex": "dim_date",
+          "nodeLineageTag": "fac0be57-4754-4f1f-915c-f7d3769ce325",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 1242,
+            "y": 259.25
+          },
+          "nodeIndex": "dim_hour",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1214,
+            "y": 255.75
+          },
+          "nodeIndex": "_Measures",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

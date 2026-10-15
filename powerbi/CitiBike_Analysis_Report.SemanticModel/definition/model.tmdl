@@ -1,0 +1,29 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["fact_trips_clean","dim_user_type","dim_station","dim_gender"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.142.928.0 (25.04)+de52df9f0bb74ad93a80d89c52d63fe6d07e0e1b
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table fact_trips_clean
+ref table dim_user_type
+ref table dim_station
+ref table dim_gender
+ref table dim_date
+ref table _Measures
+ref table DateTableTemplate_421b2127-f18e-45a6-9b39-7cec877751a4
+ref table LocalDateTable_d3d8c8d6-0874-490d-b8cb-83954df44d71
+ref table LocalDateTable_464f5b6d-1771-44c9-8072-3a5705769318
+ref table dim_hour
+
+ref cultureInfo en-US
+

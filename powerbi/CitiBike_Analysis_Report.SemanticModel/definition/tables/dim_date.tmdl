@@ -1,0 +1,65 @@
+table dim_date
+	lineageTag: fac0be57-4754-4f1f-915c-f7d3769ce325
+	dataCategory: Time
+
+	column Date
+		isKey
+		formatString: General Date
+		lineageTag: 28986dac-d71f-40c1-9090-87da73cdc44e
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year = YEAR('dim_date'[Date])
+		formatString: 0
+		lineageTag: 9f3d63df-9855-466c-8ac6-0f3bd0ed20fc
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthNumber = ```
+			MONTH('dim_date'[Date])
+			
+			```
+		formatString: 0
+		lineageTag: 8efd75cb-3cff-4baf-a57c-047391a9d0d0
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthName = FORMAT('dim_date'[Date], "MMMM")
+		lineageTag: ca452367-a78d-450a-9043-f1ff0ebd0ac5
+		summarizeBy: none
+		sortByColumn: MonthNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayOfWeekNumber = WEEKDAY('dim_date'[Date], 2)
+		formatString: 0
+		lineageTag: b39698a3-0674-4747-bdea-94da0be2f8c9
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayName = FORMAT('dim_date'[Date], "dddd")
+		lineageTag: 595e5a4c-28bd-4a10-95af-f4c5e8945ec3
+		summarizeBy: none
+		sortByColumn: DayOfWeekNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsWeekday = IF('dim_date'[DayOfWeekNumber] <= 5, TRUE, FALSE)
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 8bcd24be-931f-408f-8606-a9ca60fccd0a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_date = calculated
+		mode: import
+		source = CALENDARAUTO()
+
+	annotation PBI_Id = c8633f9121164472bbd9f1d7ae57cccb
+

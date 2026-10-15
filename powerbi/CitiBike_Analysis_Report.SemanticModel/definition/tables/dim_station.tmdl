@@ -1,0 +1,52 @@
+table dim_station
+	lineageTag: 535bb566-9ccd-4c2d-bbfd-66ef3681044d
+
+	column station_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 01721c42-ed90-463a-893d-8d06a3c3a705
+		summarizeBy: none
+		sourceColumn: station_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column station_name
+		dataType: string
+		lineageTag: c7a3ccf1-a969-4c17-9de1-1f1dd055055f
+		summarizeBy: none
+		sourceColumn: station_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column latitude
+		dataType: double
+		lineageTag: 802ea340-4e13-4a80-972a-ae4d8cbb3517
+		summarizeBy: none
+		sourceColumn: latitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column longitude
+		dataType: double
+		lineageTag: 806e5f16-f1ca-4712-97d3-3f54feeb6ba4
+		summarizeBy: none
+		sourceColumn: longitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition dim_station = m
+		mode: import
+		source =
+				let
+				    Source = Parquet.Document(File.Contents("D:\henkel-citibike-task\data\processed\dim_station.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null])
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

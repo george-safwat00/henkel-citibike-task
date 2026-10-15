@@ -1,0 +1,17 @@
+table dim_hour
+	lineageTag: 3125bf7c-ca66-435d-a58f-6d256001ae9f
+
+	column Hour
+		formatString: 0
+		lineageTag: 32d88ff4-f6bf-4d82-b66c-d93a9a705c48
+		summarizeBy: sum
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_hour = calculated
+		mode: import
+		source = GENERATESERIES(0,23,1)
+
+	annotation PBI_Id = 3b3b003dccf04aa48998e7ee40df09b5
+
