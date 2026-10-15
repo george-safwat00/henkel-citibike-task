@@ -1,0 +1,52 @@
+{
+  "name": "Henkel Corporate Theme",
+  "dataColors": [
+    "#005FBE", 
+    "#FBA700", 
+    "#871964", 
+    "#318096", 
+    "#175641", 
+    "#69008C", 
+    "#E1000F", 
+    "#28325A"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#28325A",
+  "tableAccent": "#005FBE",
+  "good": "#175641",
+  "neutral": "#FBA700",
+  "bad": "#E1000F",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "*": [
+          {
+            "fontSize": 11,
+            "fontFamily": "Segoe UI, Arial, sans-serif"
+          }
+        ],
+        "title": [
+          {
+            "fontSize": 14,
+            "fontColor": "#28325A",
+            "fontFamily": "Segoe UI, Arial, sans-serif",
+            "alignment": "Left"
+          }
+        ],
+        "background": [
+          {
+            "color": { "solid": { "color": "#FFFFFF" } },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#DED7D6" } },
+            "radius": 4
+          }
+        ]
+      }
+    }
+  }
+}
