@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "CitiBike_Analysis_Report"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "792045bb-9d3f-4e48-99cc-29e8d46e48b1"
+  }
+}

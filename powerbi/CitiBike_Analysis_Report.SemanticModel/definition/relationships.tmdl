@@ -1,0 +1,36 @@
+relationship a5b53267-0abc-e92f-8adc-8707aaf5aed5
+	fromColumn: fact_trips_clean.end_station_id
+	toColumn: dim_station.station_id
+
+relationship 43305566-21c8-0ba6-28e2-b6cbf174a7ea
+	isActive: false
+	fromColumn: fact_trips_clean.start_station_id
+	toColumn: dim_station.station_id
+
+relationship 82245f48-e079-429a-7f07-435463958480
+	fromColumn: fact_trips_clean.user_type_id
+	toColumn: dim_user_type.user_type_id
+
+relationship 66af2947-9940-8bd0-c072-661ac9be5757
+	fromColumn: fact_trips_clean.gender_id
+	toColumn: dim_gender.gender_id
+
+relationship 4647b6d5-1769-4797-9787-857062052497
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fact_trips_clean.start_time
+	toColumn: LocalDateTable_d3d8c8d6-0874-490d-b8cb-83954df44d71.Date
+
+relationship 4c225d42-618c-4124-8f43-57892d5b6982
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fact_trips_clean.stop_time
+	toColumn: LocalDateTable_464f5b6d-1771-44c9-8072-3a5705769318.Date
+
+relationship 58b281df-b13a-9c5f-48f2-5db69d2e66c3
+	fromColumn: fact_trips_clean.start_date
+	toColumn: dim_date.Date
+
+relationship 5e4b4a2c-ed74-7b28-923f-8e6465fbbe26
+	isActive: false
+	fromColumn: fact_trips_clean.stop_date
+	toColumn: dim_date.Date
+

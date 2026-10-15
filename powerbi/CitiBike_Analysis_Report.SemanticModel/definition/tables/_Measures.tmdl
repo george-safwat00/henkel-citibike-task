@@ -1,0 +1,112 @@
+table _Measures
+	lineageTag: ce477e7d-56df-4cf7-a3a5-1d6dd8018227
+
+	measure 'Total Trips' = COUNTROWS('fact_trips_clean')
+		formatString: 0
+		lineageTag: 5704e036-12dd-4b82-bea9-53dd0cdff1b0
+
+	measure 'Avg Duration (min)' = AVERAGE('fact_trips_clean'[trip_duration_seconds]) / 60
+		lineageTag: 67fd533f-3396-4c0f-bc6a-63379cf79f58
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Avg Speed (km/h)' = AVERAGE('fact_trips_clean'[speed_kmh])
+		lineageTag: 595c1079-45a0-4081-a5c9-02bcac9da6b0
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Distance (km)' = SUM('fact_trips_clean'[distance_km])
+		lineageTag: 6ddcccd3-9704-4f38-b912-b218c0587b00
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Trips (by End Station)' =
+			
+			CALCULATE(
+			    [Total Trips],
+			    USERELATIONSHIP('dim_station'[station_id], 'fact_trips_clean'[end_station_id])
+			)
+		formatString: 0
+		lineageTag: 0ac4bc29-5166-4f93-b5a1-1958cb575a67
+
+	measure 'Total Returns' =
+			
+			CALCULATE(
+			    [Total Trips],
+			    USERELATIONSHIP('dim_date'[Date], 'fact_trips_clean'[stop_date])
+			)
+		formatString: 0
+		lineageTag: 1e69701d-af33-4b52-b410-127e519d2329
+
+	measure 'Rentals (Starts)' = ```
+			
+			CALCULATE(
+			    [Total Trips],
+			    TREATAS(
+			        VALUES('dim_hour'[Hour]), 
+			        'fact_trips_clean'[start_hour]
+			    )
+			)
+			```
+		formatString: 0
+		lineageTag: fbf972ff-6ddf-4ee4-bee0-55c39e817187
+
+	measure 'Avg Rentals per Weekday Hour' =
+			
+			ROUND(DIVIDE(
+			    [Rentals (Starts)],
+			    CALCULATE(
+			        DISTINCTCOUNT('dim_date'[Date]),
+			        'dim_date'[IsWeekday] = TRUE()
+			    ),
+			    0
+			),0)
+		lineageTag: a73dc33a-a569-4d1e-96b2-46a7a72b28b6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Returns (Ends)' = ```
+			
+			CALCULATE(
+			    [Total Trips],
+			    TREATAS(
+			        VALUES('dim_hour'[Hour]), 
+			        'fact_trips_clean'[stop_hour]
+			    )
+			)
+			```
+		formatString: 0
+		lineageTag: 403d3986-d1fb-48a8-ae5d-1e81a8f6d8c9
+
+	measure 'Avg Returns per Weekday Hour' =
+			
+			ROUND(DIVIDE(
+			    [Returns (Ends)],
+			    CALCULATE(
+			        DISTINCTCOUNT('dim_date'[Date]),
+			        'dim_date'[IsWeekday] = TRUE()
+			    ),
+			    0
+			),0)
+		lineageTag: 30a95892-1431-472c-b635-1d1c865bf847
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column
+		isHidden
+		formatString: 0
+		lineageTag: 9e330310-f970-4084-8e00-269966f556b2
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Measures = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = 26abcbea71d241aab8043313ad3f457a
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+

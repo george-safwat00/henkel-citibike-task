@@ -1,0 +1,249 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.63\",\"type\":2},\"customTheme\":{\"name\":\"Henkel_Corporate_Theme32644485269052625.json\",\"version\":\"5.63\",\"type\":1}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true,\"filterPaneHiddenInEditMode\":false},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Henkel_Corporate_Theme32644485269052625.json",
+            "path": "Henkel_Corporate_Theme32644485269052625.json",
+            "type": 201
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Insights & Recommendations",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 1280.00,
+      "name": "0caa8afe6fd924a4c3a7",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"22cc0eaa144db3af432d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1.4285714285713311,\"y\":710,\"z\":2000,\"width\":1100,\"height\":392.8571428571429,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"Key Findings: \",\"textStyle\":{\"fontSize\":\"14pt\",\"color\":\"#e1000f\"}}]},{\"textRuns\":[{\"value\":\"The Morning Rush: Rentals (Starts) peak sharply at 8:00 AM, with Returns (Ends) following closely at 9:00 AM. This 1-hour lag represents the average morning commute duration.\",\"textStyle\":{\"fontSize\":\"14pt\",\"color\":\"#28325a\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"The Evening Rush: The pattern perfectly inverts in the evening. Rentals peak at 5:00 PM (leaving business districts), and Returns peak at 6:00 PM (arriving at residential areas).\",\"textStyle\":{\"fontSize\":\"14pt\",\"color\":\"#28325a\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"Midday Dormancy: Both metrics drop to their lowest points between 10:00 AM and 4:00 PM, confirming that Subscribers strictly use the system for commuting, not midday leisure.\",\"textStyle\":{\"fontSize\":\"14pt\",\"color\":\"#28325a\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"Actionable Recommendation: Optimize fleet redistribution to match this exact tidal flow. Ensure docks are empty at residential stations by 7:30 AM to accept morning returns, and full at business district stations by 4:30 PM to accommodate the evening exodus.\",\"textStyle\":{\"fontSize\":\"14pt\",\"color\":\"#28325a\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Q5: Commute Flow Analysis  (Subscribers, Mon-Fri)'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"padding\":[{\"properties\":{\"top\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"right\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"left\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}]}},\"parentGroupName\":\"8fcc64478b524722903d\"}",
+          "filters": "[]",
+          "height": 392.86,
+          "width": 1100.00,
+          "x": 1.43,
+          "y": 710.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"7ad9ac5e0be990eef003\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":295.7142857142857,\"z\":1000,\"width\":1100,\"height\":392.8571428571429,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"Key Findings: \",\"textStyle\":{\"fontSize\":\"14pt\",\"color\":\"#e1000f\"}}]},{\"textRuns\":[{\"value\":\"Overall Pattern: Subscribers' trips are heavily concentrated in the 0-60 minutes, reflecting quick, point-to-point commutes. Customers show a much wider distribution, with a significantly higher proportion of trips lasting 30–60+ minutes.\",\"textStyle\":{\"fontSize\":\"14pt\",\"color\":\"#28325a\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"Station-Level Differences: At commuter-heavy stations (e.g., E 7 St & Avenue A), the average duration for both user types is relatively low and similar. However, at tourist-heavy stations (e.g., Central Park South), the average duration for Customers spikes dramatically, while Subscribers maintain their short, efficient ride times.\",\"textStyle\":{\"fontSize\":\"14pt\",\"color\":\"#28325a\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"Action: Implement time-based pricing or incentives. For example, offer a \\\"first 30 minutes free\\\" perk to reinforce the Subscriber value proposition, while introducing premium \\\"hourly passes\\\" for Customers who frequently exceed the standard 30-minute window.\",\"textStyle\":{\"fontSize\":\"14pt\",\"color\":\"#28325a\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Q4: Trip Duration Analysis'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"padding\":[{\"properties\":{\"top\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"right\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"left\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}]}},\"parentGroupName\":\"8fcc64478b524722903d\"}",
+          "filters": "[]",
+          "height": 392.86,
+          "width": 1100.00,
+          "x": 0.00,
+          "y": 295.71,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"8fcc64478b524722903d\",\"layouts\":[{\"id\":0,\"position\":{\"height\":1102.857142857143,\"width\":1101.4285714285713,\"x\":0,\"y\":74.28571428571429,\"z\":2002,\"tabOrder\":2002}}],\"singleVisualGroup\":{\"displayName\":\"Group 1\",\"groupMode\":0},\"parentGroupName\":\"9ebcd90ac482252f278c\"}",
+          "height": 1102.86,
+          "width": 1101.43,
+          "x": 0.00,
+          "y": 74.29,
+          "z": 2002.00
+        },
+        {
+          "config": "{\"name\":\"9ebcd90ac482252f278c\",\"layouts\":[{\"id\":0,\"position\":{\"height\":1177.142857142857,\"width\":1101.4285714285713,\"x\":89.28571428571433,\"y\":51.428571428571445,\"z\":2003,\"tabOrder\":2002}}],\"singleVisualGroup\":{\"displayName\":\"Group 2\",\"groupMode\":0}}",
+          "height": 1177.14,
+          "width": 1101.43,
+          "x": 89.29,
+          "y": 51.43,
+          "z": 2003.00
+        },
+        {
+          "config": "{\"name\":\"e347162c2052cea61514\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":684.2857142857143,\"height\":74.28571428571429,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Strategic Insights & Recommendations\",\"textStyle\":{\"fontSize\":\"24pt\",\"color\":\"#e1000f\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"parentGroupName\":\"9ebcd90ac482252f278c\"}",
+          "filters": "[]",
+          "height": 74.29,
+          "width": 684.29,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"e8d033533e54d029b2ac\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1100,\"height\":268.5714285714286,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"Key Findings: \",\"textStyle\":{\"fontSize\":\"14pt\",\"color\":\"#e1000f\"}}]},{\"textRuns\":[{\"value\":\"Subscribers (Commuters): Exhibit a classic \\\"M-shaped\\\" hourly curve (peaks at 8 AM & 5 PM) and are heavily skewed toward weekdays.\",\"textStyle\":{\"fontSize\":\"14pt\",\"color\":\"#28325a\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"Customers (Tourists): Show a flatter midday usage curve and a distinct 75% increase in volume on weekends.\",\"textStyle\":{\"fontSize\":\"14pt\",\"color\":\"#28325a\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"Action: Rebalance fleet from residential to business zones during rush hours; maintain tourist hub availability on weekends.\",\"textStyle\":{\"fontSize\":\"14pt\",\"color\":\"#28325a\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Q2: Usage Patterns (Subscribers vs. Customers)'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"padding\":[{\"properties\":{\"top\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"right\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"left\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}]}},\"parentGroupName\":\"8fcc64478b524722903d\"}",
+          "filters": "[]",
+          "height": 268.57,
+          "width": 1100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Q5",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 900.00,
+      "name": "ba2442fb5dad2a76cf0c",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"26906c6cd3afd68cea6b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":61.42857142857139,\"y\":140,\"z\":0,\"width\":957.1428571428572,\"height\":620,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Avg Rentals per Weekday Hour\"},{\"queryRef\":\"_Measures.Avg Returns per Weekday Hour\"}],\"Category\":[{\"queryRef\":\"dim_hour.Hour\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dim_hour\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Avg Rentals per Weekday Hour\"},\"Name\":\"_Measures.Avg Rentals per Weekday Hour\",\"NativeReferenceName\":\"Avg Rentals per Weekday Hour\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Avg Returns per Weekday Hour\"},\"Name\":\"_Measures.Avg Returns per Weekday Hour\",\"NativeReferenceName\":\"Avg Returns per Weekday Hour\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Hour\"},\"Name\":\"dim_hour.Hour\",\"NativeReferenceName\":\"Hour\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Avg Rentals per Weekday Hour\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_user_type\"}},\"Property\":\"user_type_name\"}},\"Right\":{\"Literal\":{\"Value\":\"'Subscriber'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_user_type\"}},\"Property\":\"user_type_name\"}},\"Right\":{\"Literal\":{\"Value\":\"'Customer'\"}}}}}]}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideCenter'\"}}}}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopRight'\"}}},\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"legendMarkerRendering\":{\"expr\":{\"Literal\":{\"Value\":\"'lineOnly'\"}}}}}],\"lineStyles\":[{\"properties\":{\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"markerColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"markers\":[{\"properties\":{\"borderShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"borderColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"_Measures.Avg Rentals per Weekday Hour\"}},{\"properties\":{\"borderColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"_Measures.Avg Returns per Weekday Hour\"}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'AVG Rentals and Returns Per Weekday'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Subscriber Rentals vs. Returns per Hour (Mon-Fr)'\"}}}}}],\"padding\":[{\"properties\":{\"top\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"right\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"left\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"6eefab1a607120446b2c\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_user_type\"}},\"Property\":\"user_type_name\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_user_type\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"user_type_name\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Subscriber'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}},{\"name\":\"47855e4d34e5956bd65e\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_date\"}},\"Property\":\"IsWeekday\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_date\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"IsWeekday\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"true\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}},{\"name\":\"7537f2747d530fa6432c\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_station\"}},\"Property\":\"station_name\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_station\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"station_name\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Central Park S & 6 Ave'\"}}],[{\"Literal\":{\"Value\":\"'Soissons Landing'\"}}],[{\"Literal\":{\"Value\":\"'Grand Army Plaza & Central Park S'\"}}],[{\"Literal\":{\"Value\":\"'Vesey Pl & River Terrace'\"}}],[{\"Literal\":{\"Value\":\"'E 7 St & Avenue A'\"}}],[{\"Literal\":{\"Value\":\"'North Moore St & Greenwich St'\"}}],[{\"Literal\":{\"Value\":\"'Pershing Square North'\"}}],[{\"Literal\":{\"Value\":\"'E 13 St & Avenue A'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 620.00,
+          "width": 957.14,
+          "x": 61.43,
+          "y": 140.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1080.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Q4",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 900.00,
+      "name": "c449760ed8f70e2ef382",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1733ad57ade0be2c32e8\",\"layouts\":[{\"id\":0,\"position\":{\"height\":851.4285714285714,\"width\":957.1428571428572,\"x\":61.42857142857139,\"y\":24.285714285714278,\"z\":2,\"tabOrder\":2}}],\"singleVisualGroup\":{\"displayName\":\"Group 1\",\"groupMode\":0}}",
+          "height": 851.43,
+          "width": 957.14,
+          "x": 61.43,
+          "y": 24.29,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"28d030bb5dd37b8b0f84\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":957.1428571428572,\"height\":420,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"hundredPercentStackedColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fact_trips_clean.Duration Bin (min)\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Total Trips\"}],\"Series\":[{\"queryRef\":\"dim_user_type.user_type_name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_trips_clean\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dim_user_type\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Duration Bin (min)\"},\"Name\":\"fact_trips_clean.Duration Bin (min)\",\"NativeReferenceName\":\"Duration Bin (min)\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Trips\"},\"Name\":\"_Measures.Total Trips\",\"NativeReferenceName\":\"Total Trips\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"user_type_name\"},\"Name\":\"dim_user_type.user_type_name\",\"NativeReferenceName\":\"User Type\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Trips\"}}}]},\"columnProperties\":{\"dim_user_type.user_type_name\":{\"displayName\":\"User Type\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_user_type\"}},\"Property\":\"user_type_name\"}},\"Right\":{\"Literal\":{\"Value\":\"'Subscriber'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_user_type\"}},\"Property\":\"user_type_name\"}},\"Right\":{\"Literal\":{\"Value\":\"'Customer'\"}}}}}]}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideCenter'\"}}}}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopRight'\"}}},\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showGradientLegend\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"ribbonBands\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Trip Duration Distribution by User Type (Whole Dataset)'\"}}}}}],\"padding\":[{\"properties\":{\"top\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"right\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"left\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}]}},\"parentGroupName\":\"1733ad57ade0be2c32e8\"}",
+          "filters": "[]",
+          "height": 420.00,
+          "width": 957.14,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"b3fbc494775fc80dcfef\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":431.4285714285715,\"z\":1000,\"width\":957.1428571428572,\"height\":420,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dim_station.station_name\",\"active\":true}],\"Series\":[{\"queryRef\":\"dim_user_type.user_type_name\"}],\"Y\":[{\"queryRef\":\"_Measures.Avg Duration (min)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"dim_station\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dim_user_type\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"station_name\"},\"Name\":\"dim_station.station_name\",\"NativeReferenceName\":\"Station Name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"user_type_name\"},\"Name\":\"dim_user_type.user_type_name\",\"NativeReferenceName\":\"User Type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Avg Duration (min)\"},\"Name\":\"_Measures.Avg Duration (min)\",\"NativeReferenceName\":\"Avg Duration (min)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Avg Duration (min)\"}}}]},\"columnProperties\":{\"dim_user_type.user_type_name\":{\"displayName\":\"User Type\"},\"dim_station.station_name\":{\"displayName\":\"Station Name\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_user_type\"}},\"Property\":\"user_type_name\"}},\"Right\":{\"Literal\":{\"Value\":\"'Subscriber'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_user_type\"}},\"Property\":\"user_type_name\"}},\"Right\":{\"Literal\":{\"Value\":\"'Customer'\"}}}}}]}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideCenter'\"}}}}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopRight'\"}}},\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showGradientLegend\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Average Trip Duration: Top Frequent Stations'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}}}],\"padding\":[{\"properties\":{\"top\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"right\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"left\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}]}},\"parentGroupName\":\"1733ad57ade0be2c32e8\"}",
+          "filters": "[{\"name\":\"42ad90375f927a18658f\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_station\"}},\"Property\":\"station_name\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_station\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"station_name\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Central Park S & 6 Ave'\"}}],[{\"Literal\":{\"Value\":\"'Grand Army Plaza & Central Park S'\"}}],[{\"Literal\":{\"Value\":\"'E 7 St & Avenue A'\"}}],[{\"Literal\":{\"Value\":\"'North Moore St & Greenwich St'\"}}],[{\"Literal\":{\"Value\":\"'Vesey Pl & River Terrace'\"}}],[{\"Literal\":{\"Value\":\"'Pershing Square North'\"}}],[{\"Literal\":{\"Value\":\"'E 13 St & Avenue A'\"}}],[{\"Literal\":{\"Value\":\"'Soissons Landing'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{}}]},\"isHiddenInViewMode\":false},{\"name\":\"4e38ac49b96230ac1d96\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_station\"}},\"Property\":\"station_name\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_station\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"station_name\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}]",
+          "height": 420.00,
+          "width": 957.14,
+          "x": 0.00,
+          "y": 431.43,
+          "z": 1000.00
+        }
+      ],
+      "width": 1080.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Q2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 900.00,
+      "name": "e7207490bb029bb692d6",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"115ca212d1d02f379257\",\"layouts\":[{\"id\":0,\"position\":{\"height\":850,\"width\":282.8571428571429,\"x\":0,\"y\":0,\"z\":1000,\"tabOrder\":0}}],\"singleVisualGroup\":{\"displayName\":\"Group 2\",\"groupMode\":0},\"parentGroupName\":\"2328b3fe6acc67a7c7dc\"}",
+          "height": 850.00,
+          "width": 282.86,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"2328b3fe6acc67a7c7dc\",\"layouts\":[{\"id\":0,\"position\":{\"height\":850,\"width\":1025.8620689655174,\"x\":27.06896551724128,\"y\":25,\"z\":4004,\"tabOrder\":4002}}],\"singleVisualGroup\":{\"displayName\":\"Group 3\",\"groupMode\":0}}",
+          "height": 850.00,
+          "width": 1025.86,
+          "x": 27.07,
+          "y": 25.00,
+          "z": 4004.00
+        },
+        {
+          "config": "{\"name\":\"6e3b76cee1512e7cd4bc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":282.8571428571429,\"height\":128.57142857142858,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_date.IsWeekday\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_date\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"IsWeekday\"},\"Name\":\"dim_date.IsWeekday\",\"NativeReferenceName\":\" \"}]},\"columnProperties\":{\"dim_date.IsWeekday\":{\"displayName\":\" \"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"header\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}}}],\"general\":[{\"properties\":{}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"border\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Weekday'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}}}],\"spacing\":[{\"properties\":{\"verticalSpacing\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}},\"parentGroupName\":\"115ca212d1d02f379257\"}",
+          "filters": "[]",
+          "height": 128.57,
+          "width": 282.86,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"78cb124c77abd7a53eed\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1141.4285714285716,\"y\":25.714285714285715,\"z\":2000,\"width\":314.2857142857143,\"height\":95.71428571428572,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_date.IsWeekday\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_date\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"IsWeekday\"},\"Name\":\"dim_date.IsWeekday\",\"NativeReferenceName\":\"Weekday\"}]},\"columnProperties\":{\"dim_date.IsWeekday\":{\"displayName\":\"Weekday\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 95.71,
+          "width": 314.29,
+          "x": 1141.43,
+          "y": 25.71,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"a206916242711e5225d8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":721.4285714285714,\"height\":417.14285714285717,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fact_trips_clean.start_hour\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Total Trips\"}],\"Series\":[{\"queryRef\":\"dim_user_type.user_type_name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_trips_clean\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dim_user_type\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"start_hour\"},\"Name\":\"fact_trips_clean.start_hour\",\"NativeReferenceName\":\"Day Hour\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Trips\"},\"Name\":\"_Measures.Total Trips\",\"NativeReferenceName\":\"Total Trips\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"user_type_name\"},\"Name\":\"dim_user_type.user_type_name\",\"NativeReferenceName\":\"User Type\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Trips\"}}}]},\"columnProperties\":{\"fact_trips_clean.start_hour\":{\"displayName\":\"Day Hour\"},\"dim_user_type.user_type_name\":{\"displayName\":\"User Type\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"enableTitleDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"matchLineColor\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopRight'\"}}},\"legendMarkerRendering\":{\"expr\":{\"Literal\":{\"Value\":\"'lineOnly'\"}}}}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"lineStyles\":[{\"properties\":{\"strokeTransparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"markerColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_user_type\"}},\"Property\":\"user_type_name\"}},\"Right\":{\"Literal\":{\"Value\":\"'Customer'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_user_type\"}},\"Property\":\"user_type_name\"}},\"Right\":{\"Literal\":{\"Value\":\"'Subscriber'\"}}}}}]}}],\"markers\":[{\"properties\":{\"borderShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"borderColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}}},{\"properties\":{\"borderColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_user_type\"}},\"Property\":\"user_type_name\"}},\"Right\":{\"Literal\":{\"Value\":\"'Subscriber'\"}}}}}]}},{\"properties\":{\"borderColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_user_type\"}},\"Property\":\"user_type_name\"}},\"Right\":{\"Literal\":{\"Value\":\"'Customer'\"}}}}}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Daily Trip Volume by User Type'\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}},\"parentGroupName\":\"b42c7d3a3eeb8c40778c\"}",
+          "filters": "[]",
+          "height": 417.14,
+          "width": 721.43,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"b42c7d3a3eeb8c40778c\",\"layouts\":[{\"id\":0,\"position\":{\"height\":850,\"width\":721.4285714285716,\"x\":304.433497536946,\"y\":0,\"z\":0,\"tabOrder\":1000}}],\"singleVisualGroup\":{\"displayName\":\"Group 1\",\"groupMode\":0},\"parentGroupName\":\"2328b3fe6acc67a7c7dc\"}",
+          "height": 850.00,
+          "width": 721.43,
+          "x": 304.43,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"c5654d823c088bb9503b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":432.85714285714283,\"z\":1000,\"width\":721.4285714285714,\"height\":417.14285714285717,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Total Trips\"}],\"Series\":[{\"queryRef\":\"dim_user_type.user_type_name\"}],\"Category\":[{\"queryRef\":\"dim_date.DayName\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"dim_user_type\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dim_date\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Trips\"},\"Name\":\"_Measures.Total Trips\",\"NativeReferenceName\":\"Total Trips\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"user_type_name\"},\"Name\":\"dim_user_type.user_type_name\",\"NativeReferenceName\":\"user_type_name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"DayName\"},\"Name\":\"dim_date.DayName\",\"NativeReferenceName\":\"Day\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"DayName\"}}}]},\"columnProperties\":{\"dim_date.DayName\":{\"displayName\":\"Day\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":6,\"Percent\":0}}}}}}}],\"legend\":[{\"properties\":{\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopRight'\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_user_type\"}},\"Property\":\"user_type_name\"}},\"Right\":{\"Literal\":{\"Value\":\"'Customer'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_user_type\"}},\"Property\":\"user_type_name\"}},\"Right\":{\"Literal\":{\"Value\":\"'Subscriber'\"}}}}}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Weekly Trip Volume by User Type'\"}}}}}]}},\"parentGroupName\":\"b42c7d3a3eeb8c40778c\"}",
+          "filters": "[]",
+          "height": 417.14,
+          "width": 721.43,
+          "x": 0.00,
+          "y": 432.86,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"d18ae26326f8d2d83d53\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1141.4285714285716,\"y\":225.71428571428572,\"z\":3000,\"width\":314.2857142857143,\"height\":84.28571428571429,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_date.MonthName\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_date\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"MonthName\"},\"Name\":\"dim_date.MonthName\",\"NativeReferenceName\":\"MonthName\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 84.29,
+          "width": 314.29,
+          "x": 1141.43,
+          "y": 225.71,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"fecb070b66342a27632c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":145.71428571428572,\"z\":1000,\"width\":282.8571428571429,\"height\":704.2857142857143,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_date.MonthName\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_date\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"MonthName\"},\"Name\":\"dim_date.MonthName\",\"NativeReferenceName\":\" \"}]},\"columnProperties\":{\"dim_date.MonthName\":{\"displayName\":\" \"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"header\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}}}],\"general\":[{\"properties\":{}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"border\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Month'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}}}],\"spacing\":[{\"properties\":{\"verticalSpacing\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}},\"parentGroupName\":\"115ca212d1d02f379257\"}",
+          "filters": "[]",
+          "height": 704.29,
+          "width": 282.86,
+          "x": 0.00,
+          "y": 145.71,
+          "z": 1000.00
+        }
+      ],
+      "width": 1080.00
+    }
+  ],
+  "theme": "Henkel_Corporate_Theme32644485269052625.json"
+}

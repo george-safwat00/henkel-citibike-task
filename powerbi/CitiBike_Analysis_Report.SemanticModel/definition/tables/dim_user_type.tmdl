@@ -1,0 +1,32 @@
+table dim_user_type
+	lineageTag: 1854a0cb-063b-4ded-9357-0754c6a33715
+
+	column user_type_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 02681215-7483-413d-8905-5c42c037082c
+		summarizeBy: none
+		sourceColumn: user_type_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column user_type_name
+		dataType: string
+		lineageTag: 58b3f829-0cdd-4fdc-bba2-aebf6567696f
+		summarizeBy: none
+		sourceColumn: user_type_name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_user_type = m
+		mode: import
+		source =
+				let
+				    Source = Parquet.Document(File.Contents("D:\henkel-citibike-task\data\processed\dim_user_type.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null])
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
